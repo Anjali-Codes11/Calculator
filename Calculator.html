@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">    <!-- Link to external CSS file -->
+
+</head>
+<!-- Default body theme set to dark initially -->
+<body class="dark">
+    <!-- Main container for the calculator -->
+    <div class="container">
+        <!-- Theme toggle button (🌙 or ☀) -->
+        <button id="theme-toggle">🌙</button>
+
+         <!-- Calculator block with dark theme applied by default -->
+        <div class="calculator dark">
+            <form>            <!-- Calculator form -->
+
+
+                <div class="display">
+                <input type="text" id="display" readonly> <!-- Display section (readonly, user cannot type directly) -->
+                </div>
+
+            
+                <!-- First row: AC (Clear All), DE (Delete), dot, divide -->
+                <div>
+                    <input type="button" value="AC"  class="operator">
+                    <input type="button" value="DE"  class="operator">
+                    <input type="button" value="." class="operator">
+                    <input type="button" value="/" class="operator">
+                </div>
+
+                <!-- Second row: 7, 8, 9, multiply -->
+                 <div>
+                    <input type="button" value="7" >
+                    <input type="button" value="8">
+                    <input type="button" value="9" >
+                    <input type="button" value="*"  class="operator">
+                </div>
+
+                <!-- Third row: 4, 5, 6, minus -->
+                 <div>
+                    <input type="button" value="4" >
+                    <input type="button" value="5" >
+                    <input type="button" value="6" >
+                    <input type="button" value="-"  class="operator">
+                </div>
+
+                <!-- Fourth row: 1, 2, 3, plus -->
+                 <div>
+                    <input type="button" value="1">
+                    <input type="button" value="2" >
+                    <input type="button" value="3" >
+                    <input type="button" value="+"  class="operator">
+                </div>
+
+                <!-- Fifth row: 00, 0, equals -->
+                 <div>
+                    <input type="button" value="00" >
+                    <input type="button" value="0" >
+                    <input type="button" value="="   class="equal operator" >
+                    <!-- Equal button has both .equal and .operator classes for width and color styling -->
+
+                </div>
+                
+
+            </form>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>    <!-- Link to external JavaScript file -->
+
+</body>
+
+</html>
